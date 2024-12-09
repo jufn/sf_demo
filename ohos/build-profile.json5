@@ -1,0 +1,56 @@
+/*
+* Copyright (c) 2023 Hunan OpenValley Digital Industry Development Co., Ltd.
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/hest/.ohos/config/default_ohos_PbZTgf2eNpRWVvbIkhTb0kIu3J3FMfvFWY0LwUjUlPo=.cer",
+          "storePassword": "0000001BBC9E53D5F7DBA4B93406C6DD4938B790183B1BA6B1560632F5361085569AE9938F59BCFBE014D0",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BA0AAF56B1F5F0C2A862B2E520FD09C1C76FC552250ED92C9E811C4445AC103837B99C87C8EC98F",
+          "profile": "/Users/hest/.ohos/config/default_ohos_PbZTgf2eNpRWVvbIkhTb0kIu3J3FMfvFWY0LwUjUlPo=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/hest/.ohos/config/default_ohos_PbZTgf2eNpRWVvbIkhTb0kIu3J3FMfvFWY0LwUjUlPo=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
